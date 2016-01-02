@@ -1,1 +1,7 @@
 welcome to the dashboard!
+<%=  form_for @shout do |form| %>
+  <%= form.text_field :body, :placeholder => "Shout Content Here!" %>
+  <%= form.submit "SHOUT IT OUT!"%>
+<% end %>
+
+<%= render @shouts %>
